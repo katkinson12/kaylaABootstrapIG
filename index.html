@@ -6,224 +6,249 @@
     <title>Instagram Post Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head></head>
+</head>
 <body>
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a style="font-size: 30px;" class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i></a> 
+      <a style="font-size: 25px;" class="navbar-brand" href="#"><i class="fa-brands fa-instagram fa-xl"></i> Instagram</a> 
       <div class= "nav-buttons d-flex flex-row gap-2"> 
-       <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Launch demo modal
+        </button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Create new post</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <strong>Caption</strong> 
-        <p>Add the caption to your post here</p>
-        <i class="fa-solid fa-camera"></i> 
-        <i class="fa-solid fa-location-dot"></i>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create new post</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <strong>Caption</strong> 
+                <p>Add the caption to your post here</p>
+                <i class="fa-solid fa-camera"></i> 
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="gear (1).svg"/>
+            <img src="gear (1).svg"/>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Proflie</a></li>
+            <li><a class="dropdown-item" href="#">Accessibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li><hr class="dropdown-divder"></li>
+            <li><a class="dropdown-item bg-danger" href="#">Log out </a></li>
           </ul>
         </div>
       </div>
+    </div>
   </nav>
-  
 
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+  <nav>
+    <!--This is the nav tabs for the pg -->
+    <div class="nav nav-tabs d-flex flex-row justify-content-center"  id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
+        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+      </svg></button>
+      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3-gap" viewBox="0 0 16 16">
+        <path d="M4 2v2H2V2h2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zM9 2v2H7V2h2zm5 0v2h-2V2h2zM4 7v2H2V7h2zm5 0v2H7V7h2zm5 0h-2v2h2V7zM4 12v2H2v-2h2zm5 0v2H7v-2h2zm5 0v2h-2v-2h2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-2z"/>
+      </svg></button>
+    </div>
+  </nav>
+
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      <!-- Content for the "Home" tab -->
+      <div class="row justify-content-center">
+        <div class="card" style="width: 26rem;">
+          <h5 class="card title">Capturing Moments</h5>
+          <img src="https://media.istockphoto.com/id/1302442639/photo/view-from-dune-top-over-north-sea.jpg?s=1024x1024&w=is&k=20&c=Pv9pNg8_Fi1UY6xS8eAvoF-tFTNamZ6jGItOa2ByriI=" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text"><strong>409 likes</strong></p>
           </div>
         </div>
       </div>
-      <nav>
-      <!--This is the nav tabs for the pg -->
-        <div class="nav nav-tabs d-flex flex-row justify-content-center"  id="nav-tab" role="tablist">
-          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-        </div>
-      </nav>
-      <div class="tab-content d-flex flex-col justify-content-center" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0"><div class="card" style="width: 18rem;">
-          <img src="https://picsum.photos/100/100" class="card-img-top" alt="...">
+      <br>
+      <div class="row justify-content-center">
+        <div class="card" style="width: 26rem;">
+          <h5 class="card title">Timeless Beauty</h5>
+          <img src="https://cdn.stocksnap.io/img-thumbs/960w/man-hiking_EZZSLOHXVG.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-            <img src="https://picsum.photos/100/100" class="card-img-top" alt="...">
+            <p class="card-text"><strong>9 likes</strong></p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row justify-content-center">
+        <div class="card" style="width: 26rem;">
+          <h5 class="card title">Embracing Journey</h5>
+          <img src="https://cdn.stocksnap.io/img-thumbs/960w/road-aerial_VOFXA0EVJF.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-            <img src="https://picsum.photos/100/100" class="card-img-top" alt="...">
+            <p class="card-text"><strong>209 likes</strong></p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row justify-content-center">
+        <div class="card" style="width: 26rem;">
+          <h5 class="card title">Chasing dreams.</h5>
+          <img src="https://cdn.stocksnap.io/img-thumbs/960w/green-grass_G9XX5FGAAT.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-              </div>
-            </div>
-          </div>
+            <p class="card-text"><strong>209 likes</strong></p>
           </div>
         </div>
-         <!-- Inside the "Profile" tab content -->
-         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-          <div class="row">
-            <div class="col-4">
-              <!-- Content for the first grid item -->
-              <div class="card">
-                <img src="https://picsum.photos/200/200" class="card-img-top" alt="Image 1">
-                <div class="card-body">
-                  <h5 class="card-title">Card Title 1</h5>
-                  <!-- Additional content for the first grid item -->
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <!-- Content for the second grid item -->
-              <div class="card">
-                <img src="https://picsum.photos/200/200" class="card-img-top" alt="Image 2">
-                <div class="card-body">
-                  <h5 class="card-title">Card Title 2</h5>
-                  <!-- Additional content for the second grid item -->
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <!-- Content for the third grid item -->
-              <div class="card">
-                <img src="https://picsum.photos/200/300" class="card-img-top" alt="Image 3">
-                <div class="card-body">
-                  <h5 class="card-title">Card Title 3</h5>
-                  <!-- Additional content for the third grid item -->
-                </div>
-              </div>
-            </div>
-            <!-- Repeat the above three columns to create a 3x3 grid -->
+      </div>
+      <br>
+      <div class="row justify-content-center">
+        <div class="card" style="width: 26rem;">
+          <h5 class="card title">Glimpse of Serenity</h5>
+          <img src="https://cdn.stocksnap.io/img-thumbs/960w/mill-mountain_ARAGQYVAYC.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text"><strong>999 likes</strong></p>
           </div>
         </div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-          <div class="row">
-            <div class="col-4">
-              <!-- Content for the first grid item -->
-              <div class="card">
-                <img src="https://picsum.photos/200/200" class="card-img-top" alt="Image 1">
-                <div class="card-body">
-                  <h5 class="card-title">Card Title 1</h5>
-                  <!-- Additional content for the first grid item -->
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <!-- Content for the second grid item -->
-              <div class="card">
-                <img src="https://picsum.photos/200/200" class="card-img-top" alt="Image 2">
-                <div class="card-body">
-                  <h5 class="card-title">Card Title 2</h5>
-                  <!-- Additional content for the second grid item -->
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <!-- Content for the third grid item -->
-              <div class="card">
-                <img src="https://picsum.photos/200/300" class="card-img-top" alt="Image 3">
-                <div class="card-body">
-                  <h5 class="card-title">Card Title 3</h5>
-                  <!-- Additional content for the third grid item -->
-                </div>
-              </div>
-            </div>
-            <!-- Repeat the above three columns to create a 3x3 grid -->
+      </div>
+      <br>
+      <div class="row justify-content-center">
+        <div class="card" style="width: 26rem;">
+          <h5 class="card title">Elegance and Simplicity</h5>
+          <img src="https://cdn.stocksnap.io/img-thumbs/960w/Lake-Mountains_VZBJUVPO25.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text"><strong>999 likes</strong></p>
           </div>
         </div>
+      </div>
+      <br>
       </div>
     </div>
-<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-<div class="row">
-<div class="col-4">
-  <!-- Content for the first grid item -->
-  <div class="card">
-    <img src="https://picsum.photos/200/200" class="card-img-top" alt="Image 1">
-    <div class="card-body">
-      <h5 class="card-title">Card Title 1</h5>
-      <!-- Additional content for the first grid item -->
+
+    <!-- Inside the "Profile" tab content -->
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+      <div class="row">
+        <!-- Repeat the below column structure for each grid item -->
+        <div class="col-4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200" class="card-img-top" alt="Image 1">
+            <div class="card-body">
+              <h5 class="card-title">Card Title 1</h5>
+              <!-- Additional content for the first grid item -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat the above column structure for each grid item -->
+        <div class="col-4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200" class="card-img-top" alt="Image 2">
+            <div class="card-body">
+              <h5 class="card-title">Card Title 2</h5>
+              <!-- Additional content for the second grid item -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat the above column structure for each grid item -->
+        <div class="col-4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200" class="card-img-top" alt="Image 3">
+            <div class="card-body">
+              <h5 class="card-title">Card Title 3</h5>
+              <!-- Additional content for the third grid item -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat the above column structure for the remaining grid items -->
+        <!-- You should have a total of 12 columns (3x3 grid) -->
+        
+        <!-- Fourth Grid Item -->
+        <div class="col-4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200" class="card-img-top" alt="Image 4">
+            <div class="card-body">
+              <h5 class="card-title">Card Title 4</h5>
+              <!-- Additional content for the fourth grid item -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Fifth Grid Item -->
+        <div class="col-4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200" class="card-img-top" alt="Image 5">
+            <div class="card-body">
+              <h5 class="card-title">Card Title 5</h5>
+              <!-- Additional content for the fifth grid item -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat the above column structure for the remaining grid items -->
+        <!-- You should have a total of 12 columns (3x3 grid) -->
+        
+        <!-- Sixth Grid Item -->
+        <div class="col-4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200" class="card-img-top" alt="Image 6">
+            <div class="card-body">
+              <h5 class="card-title">Card Title 6</h5>
+              <!-- Additional content for the sixth grid item -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Continue repeating the structure for the remaining grid items -->
+        <div class="col-4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200" class="card-img-top" alt="Image 4">
+            <div class="card-body">
+              <h5 class="card-title">Card Title 4</h5>
+              <!-- Additional content for the fourth grid item -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Fifth Grid Item -->
+        <div class="col-4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200" class="card-img-top" alt="Image 5">
+            <div class="card-body">
+              <h5 class="card-title">Card Title 5</h5>
+              <!-- Additional content for the fifth grid item -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat the above column structure for the remaining grid items -->
+        <!-- You should have a total of 12 columns (3x3 grid) -->
+        
+        <!-- Sixth Grid Item -->
+        <div class="col-4">
+          <div class="card">
+            <img src="https://picsum.photos/200/200" class="card-img-top" alt="Image 6">
+            <div class="card-body">
+              <h5 class="card-title">Card Title 6</h5>
+              <!-- Additional content for the sixth grid item -->
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-<div class="col-4">
-  <!-- Content for the second grid item -->
-  <div class="card">
-    <img src="https://picsum.photos/200/200" class="card-img-top" alt="Image 2">
-    <div class="card-body">
-      <h5 class="card-title">Card Title 2</h5>
 
-<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-  <div class="row">
-    <div class="col-4">
-      <!-- Content for the first grid item -->
-      <div class="card">
-        <img src="https://picsum.photos/200/200" class="card-img-top" alt="Image 1">
-        <div class="card-body">
-          <h5 class="card-title">Card Title 1</h5>
-          <!-- Additional content for the first grid item -->
-        </div>
-      </div>
-    </div>
-    <div class="col-4">
-      <!-- Content for the second grid item -->
-      <div class="card">
-        <img src="https://picsum.photos/200/200" class="card-img-top" alt="Image 2">
-        <div class="card-body">
-          <h5 class="card-title">Card Title 2</h5>
-          <!-- Additional content for the second grid item -->
-        </div>
-      </div>
-    </div>
-    <div class="col-4">
-      <!-- Content for the third grid item -->
-      <div class="card">
-        <img src="https://picsum.photos/200/300" class="card-img-top" alt="Image 3">
-        <div class="card-body">
-          <h5 class="card-title">Card Title 3</h5>
-          <!-- Additional content for the third grid item -->
-        </div>
-      </div>
-    </div>
-    <!-- Repeat the above three columns to create a 3x3 grid -->
-  </div>
-</div>
-
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
